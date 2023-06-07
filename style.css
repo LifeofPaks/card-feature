@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+p{
+    color: var(--Grayish-Blue);
+}
+
+header{
+    text-align: center;
+}
+
+header h2{
+    font-weight: 200;
+    font-size: 2.3rem;
+    color: var(--Very-Dark-Blue);
+}
+
+header h3{
+    font-size: 2.3rem;
+    color: var(--Very-Dark-Blue);
+}
+
+header p{
+    font-size: 1rem;
+    width: 550px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-inline: auto;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.card{
+    width: 380px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: .4rem;
+}
+
+.card h4{
+    color: var(--Very-Dark-Blue);
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+}
+
+.card p{
+    margin-bottom: 2.3rem;
+}
+
+.img-box{
+    text-align: right;
+}
+
+.double{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.supervisor{
+    border-top: 5px solid var(--Cyan);
+}
+
+.team{
+    border-top: 5px solid var(--Red);
+}
+
+.karma{
+    border-top: 5px solid var(--Orange);
+}
+
+.calculator{
+    border-top: 5px solid var(--Blue);
+}
+
+/* RESPONSIVE FOR SMALLER SCREEN */
+
+@media (max-width: 600px){
+    .container{
+        margin: 3rem;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    header h2,
+    header h3{
+        font-size: 1.5rem;
+    }
+    
+
+    header p{
+        width: fit-content;
+    }
+
+    .card{
+        width: 320px;
+    }
+}
